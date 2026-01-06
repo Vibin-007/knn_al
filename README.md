@@ -1,42 +1,42 @@
-# 🛍️ Social Network Ads Prediction (K-Nearest Neighbors)
+# 🛍️ Social Network Ads Predictor (KNN)
 
-This project implements a **K-Nearest Neighbors (KNN)** classifier to predict whether a user will purchase a product based on social network advertisement data.
+A Streamlit application that predicts whether a user will purchase a product based on social network advertisement data using K-Nearest Neighbors (KNN).
 
-## 🚀 Features
+## 📊 Features
 
-- **Purchase Prediction**: Classifies users as 'Purchased' or 'Not Purchased' based on Age and Estimated Salary.
-- **Interactive UI**:
-    - **Dynamic K Value**: Adjust the number of neighbors ($k$) and see results instantly.
-    - **Decision Boundary**: Visualize how the model separates the two classes.
-    - **Performance Metrics**: View Accuracy, Confusion Matrix, and Classification Report.
+- **Purchase Prediction**: Classifies users as "Purchased" or "Not Purchased".
+- **Dynamic K Value**: Allows users to adjust the 'K' (neighbors) value to observe performance changes.
+- **Decision Boundary**: Visualizes how the model separates classes in 2D space.
+- **Performance Metrics**: Real-time calculation of Accuracy, Confusion Matrix, and Precision/Recall.
 
-## 🛠️ Usage
+## 🛠️ Installation
 
-1. **Install dependencies**:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vibin-007/knn_al.git
+   cd knn_al
+   ```
+
+2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Run the App**:
+3. Run the application:
    ```bash
-   python -m streamlit run app.py
+   streamlit run app.py
    ```
 
 ## 📁 Project Structure
 
-- `app.py`: Streamlit application file.
-- `knn_analysis.ipynb`: Jupyter notebook for KNN analysis.
-- `Social_Network_Ads.csv`: Dataset with User ID, Gender, Age, EstimatedSalary, and Purchased status.
-- `requirements.txt`: Python package dependencies.
+- `app.py`: Main application file containing the Streamlit interface and logic.
+- `Social_Network_Ads.csv`: Dataset containing User ID, Gender, Age, EstimatedSalary, and Purchased status.
+- `knn_analysis.ipynb`: Jupyter notebook for model development and analysis.
+- `requirements.txt`: List of Python dependencies.
 
-## 📂 Dataset
+## 📈 Model Information
 
-The project uses `Social_Network_Ads.csv`.
-
-## 📦 Requirements
-
-- streamlit
-- pandas
-- scikit-learn
-- matplotlib
-- seaborn
+The model uses **K-Nearest Neighbors** to classify inputs based on:
+- **Age**
+- **Estimated Salary**
+- **Gender**
